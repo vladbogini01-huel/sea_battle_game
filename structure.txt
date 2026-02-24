@@ -13,6 +13,5 @@ SeaBattle/
 │   │
 │   ├── 📄 Player.h                # Базовый класс игрока
 │   ├── 📄 HumanPlayer.h
-│   ├── 📄 AIPlayer.h
 │   │
 │   └── 📄 Game.h
