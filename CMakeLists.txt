@@ -3,4 +3,7 @@ project(sea_battle_game)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(sea_battle_game main.cpp)
+add_executable(sea_battle_game main.cpp
+        include/fleet.hpp
+        include/ships.hpp
+)
