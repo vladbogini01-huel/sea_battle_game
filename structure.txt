@@ -3,10 +3,10 @@ SeaBattle/
 ├── 📄 main.cpp                    # Только точка входа
 │
 ├── 📁 include/                    # Все заголовочные файлы
-│   ├── 📄 Constants.h
+│   ├── 📄 Constants.h            done
 │   │
-│   ├── 📄 Ship.h                  # Базовый класс + ВСЕ наследники
-│   ├── 📄 Fleet.h
+│   ├── 📄 Ship.h                 done # Базовый класс + ВСЕ наследники
+│   ├── 📄 Fleet.h                done
 │   │
 │   ├── 📄 Board.h
 │   ├── 📄 BoardRenderer.h
@@ -14,4 +14,4 @@ SeaBattle/
 │   ├── 📄 Player.h                # Базовый класс игрока
 │   ├── 📄 HumanPlayer.h
 │   │
-│   └── 📄 Game.h
+│   └── 📄 Game.h      ///
