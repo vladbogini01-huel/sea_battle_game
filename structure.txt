@@ -9,9 +9,7 @@ SeaBattle/
 │   ├── 📄 Fleet.h                done
 │   │
 │   ├── 📄 Board.h
-│   ├── 📄 BoardRenderer.h
 │   │
 │   ├── 📄 Player.h                # Базовый класс игрока
-│   ├── 📄 HumanPlayer.h
 │   │
-│   └── 📄 Game.h      ///
+│   └── 📄 Game.h
