@@ -1,3 +1,6 @@
+#ifndef SHIPS_HPP
+#define SHIPS_HPP
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -178,4 +181,4 @@ public:
     }
 };
 
-
+#endif // SHIPS_HPP
