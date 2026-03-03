@@ -7,4 +7,7 @@ add_executable(sea_battle_game main.cpp
         include/fleet.hpp
         include/ships.hpp
         include/constants.hpp
+        include/player.hpp
+        include/game.hpp
+        include/board.hpp
 )
