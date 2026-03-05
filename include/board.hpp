@@ -144,23 +144,55 @@ private:
     //Одна общая функция печати сетки
     //Печатаем A..J сверху и 1..10 слева
     void printGrid(const std::vector<std::vector<char>>& g, std::ostream& out) const {
-        out << "   ";
-        for (int c = 0; c < BOARD_SIZE; ++c) {
-            out << colIndexToLetter(c) << ' ';
-        }
-        out << "\n";
-
-        for (int r = 0; r < BOARD_SIZE; ++r) {
-            out << (r + 1);
-            if (r + 1 < 10) out << ' ';
-            out << ' ';
-
-            for (int c = 0; c < BOARD_SIZE; ++c) {
-                out << g[r][c] << ' ';
-            }
-            out << "\n";
-        }
+    //верхние буквы
+    out << "     ";
+    for (int c = 0; c < BOARD_SIZE; ++c) {
+        out << colIndexToLetter(c) << ' ';
     }
+    out << "\n\n";
+
+    //верхняя рамка
+    out << "   ";
+    out << "  +";
+    for (int i = 0; i < BOARD_SIZE * 2; ++i) out << '-';
+    out << "+\n";
+
+    //строки поля
+    for (int r = 0; r < BOARD_SIZE; ++r) {
+        //номер слева
+        out << "   ";
+        if (r + 1 < 10) out << (r + 1) << ' ';
+        else out << (r + 1);
+
+        out << " |";
+
+        //клетки
+        for (int c = 0; c < BOARD_SIZE; ++c) {
+            out << g[r][c] << ' ';
+        }
+
+        out << "| ";
+
+        //номер справа
+        if (r + 1 < 10) out << (r + 1);
+        else out << (r + 1);
+
+        out << "\n";
+    }
+
+    //нижняя рамка
+    out << "   ";
+    out << "  +";
+    for (int i = 0; i < BOARD_SIZE * 2; ++i) out << '-';
+    out << "+\n\n";
+
+    // Нижние буквы
+    out << "     ";
+    for (int c = 0; c < BOARD_SIZE; ++c) {
+        out << colIndexToLetter(c) << ' ';
+    }
+    out << "\n";
+}
 };
 
 #endif
