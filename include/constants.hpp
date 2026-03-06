@@ -49,4 +49,20 @@ inline char colIndexToLetter(int index) {
     return 'A' + index;
 }
 
+
+// Очистка экрана
+void clearScreen() {
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+}
+
+// Пауза до нажатия Enter
+void waitForEnter() {
+    std::cout << "\nНажмите Enter для продолжения...";
+    std::cin.get();
+}
+
 #endif

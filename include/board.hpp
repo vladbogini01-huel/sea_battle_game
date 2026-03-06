@@ -8,24 +8,19 @@
 #include "constants.hpp"
 #include "fleet.hpp"
 
-//Board = поле игрока.
-//Внутри 2 сетки (поле и выстрелы по врагу) + флот
 class Board {
 private:
-    //флот игрока. В нем лежат корабли и их клетки.
+
     Fleet fleet;
 
-    //Наш поле со всеми заметками(выстрелы попадания и тп)
+
     std::vector<std::vector<char>> myGrid;
 
-    //ОТмечаем куда стреляли и какой был результат.
+
     std::vector<std::vector<char>> enemyGrid;
 
     public:
-    //Создаем доску для игрока:
-    //флот делается с именем владельца
-    //myGrid сначала пустое (.)
-    //enemyGrid сначала неизвестно (?)
+
     Board(const std::string& ownerName)
         : fleet(ownerName),
           myGrid(BOARD_SIZE, std::vector<char>(BOARD_SIZE, EMPTY)),
@@ -34,7 +29,7 @@ private:
     Fleet& getFleet() { return fleet; }
     const Fleet& getFleet() const { return fleet; }
 
-    //Проверка, что координаты в пределах 0..9.
+    //Проверка
     bool inBounds(int row, int col) const {
         return row >= 0 && row < BOARD_SIZE && col >= 0 && col < BOARD_SIZE;
     }
@@ -46,7 +41,6 @@ private:
     }
 
     //Рисуем myGrid по данным из Fleet.
-    //То есть Fleet хранит клетки кораблей, а myGrid — картинка.
     void rebuildMyGridFromFleet() {
         //очистка поля
         for (int r = 0; r < BOARD_SIZE; ++r) {
@@ -140,16 +134,97 @@ private:
         printGrid(enemyGrid, out);
     }
 
+// Печать двух полей рядом
+    void printBothGrids(const Board& enemyBoard, std::ostream& out = std::cout) const {
+        out << "\n" << std::string(50, '=') << "\n";
+
+        // Заголовки
+        out << "         ВАШЕ ПОЛЕ" << std::string(20, ' ') << "ВЫСТРЕЛЫ ПО ВРАГУ\n\n";
+
+        // Буквы сверху для обоих полей
+        out << "       ";
+        for (int c = 0; c < BOARD_SIZE; ++c) {
+            out << colIndexToLetter(c) << ' ';
+        }
+        out << "        ";  // разделитель
+        for (int c = 0; c < BOARD_SIZE; ++c) {
+            out << colIndexToLetter(c) << ' ';
+        }
+        out << "\n";
+
+        // Верхняя рамка для обоих полей
+        out << "      +";
+        for (int i = 0; i < BOARD_SIZE * 2; ++i) out << '-';
+        out << "+      +";
+        for (int i = 0; i < BOARD_SIZE * 2; ++i) out << '-';
+        out << "+\n";
+
+        // Строки полей
+        for (int r = 0; r < BOARD_SIZE; ++r) {
+            // Номер слева
+            out << "   ";
+            if (r + 1 < 10) out << (r + 1) << ' ';
+            else out << (r + 1);
+
+            // Своё поле (myGrid)
+            out << " |";
+            for (int c = 0; c < BOARD_SIZE; ++c) {
+                out << myGrid[r][c] << ' ';
+            }
+            out << "|   ";
+
+            // Номер по центру
+            if (r + 1 < 10) out << (r + 1) << ' ';
+            else out << (r + 1);
+
+            out << " |";
+            for (int c = 0; c < BOARD_SIZE; ++c) {
+                out << enemyGrid[r][c] << ' ';
+            }
+            out << "|";
+
+            // Номер справа
+            out << "   ";
+            if (r + 1 < 10) out << (r + 1);
+            else out << (r + 1);
+
+            out << "\n";
+        }
+
+        // Нижняя рамка для обоих полей
+        out << "      +";
+        for (int i = 0; i < BOARD_SIZE * 2; ++i) out << '-';
+        out << "+      +";
+        for (int i = 0; i < BOARD_SIZE * 2; ++i) out << '-';
+        out << "+\n";
+
+        // Буквы снизу
+        out << "       ";
+        for (int c = 0; c < BOARD_SIZE; ++c) {
+            out << colIndexToLetter(c) << ' ';
+        }
+        out << "        ";
+        for (int c = 0; c < BOARD_SIZE; ++c) {
+            out << colIndexToLetter(c) << ' ';
+        }
+        out << "\n\n";
+
+        // Статистика
+        out << "Кораблей: " << getFleet().getRemainingCount() << "/" << getFleet().getTotalCount()
+            << "          Кораблей противника: " << enemyBoard.getFleet().getRemainingCount()
+            << "/" << enemyBoard.getFleet().getTotalCount() << "\n";
+        out << std::string(50, '=') << "\n";
+    }
+
 private:
-    //Одна общая функция печати сетки
-    //Печатаем A..J сверху и 1..10 слева
+
     void printGrid(const std::vector<std::vector<char>>& g, std::ostream& out) const {
     //верхние буквы
-    out << "     ";
+    out << "       ";
     for (int c = 0; c < BOARD_SIZE; ++c) {
         out << colIndexToLetter(c) << ' ';
     }
-    out << "\n\n";
+    out << "\n";
 
     //верхняя рамка
     out << "   ";
@@ -184,10 +259,10 @@ private:
     out << "   ";
     out << "  +";
     for (int i = 0; i < BOARD_SIZE * 2; ++i) out << '-';
-    out << "+\n\n";
+    out << "+\n";
 
     // Нижние буквы
-    out << "     ";
+    out << "       ";
     for (int c = 0; c < BOARD_SIZE; ++c) {
         out << colIndexToLetter(c) << ' ';
     }
