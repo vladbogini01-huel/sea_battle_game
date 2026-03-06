@@ -2,5 +2,5 @@
 #include "include/fleet.hpp"
 #include "include/constants.hpp"
 int main (){
-
+Fleet a( "negr");
 }
