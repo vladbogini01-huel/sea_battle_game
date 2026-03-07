@@ -4,6 +4,9 @@
 #include <string>
 #include <utility>
 #include <iostream>
+#include <vector>
+#include <random>
+#include <algorithm>
 
 #include "board.hpp"
 #include "constants.hpp"
@@ -89,38 +92,53 @@ public:
         }
     }
 };
+
 //бот
-//просто стреляет по клеткам подряд
 class DummyBotPlayer : public Player {
 private:
-    //Текущая позиция "куда следующий выстрел"
+    //текущая позиция "куда следующий выстрел"
     int curRow = 0;
     int curCol = 0;
 
-public:
-    explicit DummyBotPlayer(const std::string& playerName)
-        : Player(playerName) {}
+    std::vector<std::pair<int, int>> shots;
+    std::mt19937 gen{std::random_device{}()};
+    
+    void prepareShots() {
+        shots.clear();
 
-    //Ставим корабли тестово
-    void placeFleet() override {
-        board.placeFleetTest();
-    }
-
-    //Следующая клетка по порядку: (0,0) потом (0,1) ... (0,9) потом (1,0) ...
-    std::pair<int, int> selectShot() override {
-        int r = curRow;
-        int c = curCol;
-
-        curCol++;
-        if (curCol >= BOARD_SIZE) {
-            curCol = 0;
-            curRow++;
-            if (curRow >= BOARD_SIZE) {
-                curRow = 0;
+        for (int r = 0; r < BOARD_SIZE; r++) {
+            for (int c = 0; c < BOARD_SIZE; c++) {
+                shots.push_back({r, c});
             }
         }
 
-        return {r, c};
+        std::shuffle(shots.begin(), shots.end(), gen);
+
+        curRow = 0;
+        curCol = 0;
+    }
+
+public:
+    explicit DummyBotPlayer(const std::string& playerName)
+        : Player(playerName) {
+        prepareShots();
+    }
+    //ставим корабли
+    void placeFleet() override {
+        board.placeFleetTest();
+    }
+    //следующая клетка выбирается не по порядку, а из перемешанного списка
+    std::pair<int, int> selectShot() override {
+        if (shots.empty() || curRow >= static_cast<int>(shots.size())) {
+            prepareShots();
+        }
+
+        std::pair<int, int> shot = shots[curRow];
+        curRow++;
+
+        curCol = curRow;
+
+        return shot;
     }
 };
 
