@@ -103,21 +103,44 @@ public:
         return false;  // мимо
     }
 
-    // Разместить все корабли на доске ( just test for now)
+    // Разместить все корабли на доске
     void placeShipsTest() {
-        // basic test
-        if (ships.size() >= 1) (*ships[0]).placeAt(0, 0, true);    // линкор
-        if (ships.size() >= 2) (*ships[1]).placeAt(2, 0, true);    // крейсер
-        if (ships.size() >= 3) (*ships[2]).placeAt(4, 0, true);    // крейсер
-        if (ships.size() >= 4) (*ships[3]).placeAt(6, 0, true);    // эсминец
-        if (ships.size() >= 5) (*ships[4]).placeAt(7, 0, true);    // эсминец
-        if (ships.size() >= 6) (*ships[5]).placeAt(8, 0, true);    // эсминец
-        if (ships.size() >= 7) (*ships[6]).placeAt(9, 0, false);   // катер
-        if (ships.size() >= 8) (*ships[7]).placeAt(9, 2, false);   // катер
-        if (ships.size() >= 9) (*ships[8]).placeAt(9, 4, false);   // катер
-        if (ships.size() >= 10) (*ships[9]).placeAt(9, 6, false);  // катер
-    }
+            // Генератор случайных чисел
+            unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+            std::mt19937 gen(seed);
+            std::uniform_int_distribution<> posDist(0, 9);
+            std::uniform_int_distribution<> dirDist(0, 1);
 
+            // Создаем временную доску для проверки
+            std::vector<std::vector<char>> tempBoard(10, std::vector<char>(10, EMPTY));
+
+            // Для каждого корабля
+            for (auto &ship: ships) {
+                bool placed = false;
+                int attempts = 0;
+                const int maxAttempts = 1000;
+
+                while (!placed && attempts < maxAttempts) {
+                    int row = posDist(gen);
+                    int col = posDist(gen);
+                    bool horizontal = dirDist(gen) == 0;
+
+                    // canplace ?
+                    if ((*ship).canPlaceAt(row, col, horizontal, tempBoard)) {
+                        (*ship).placeAt(row, col, horizontal);
+
+                        // отмечаем на временной доске
+                        for (auto cell: (*ship).getCells()) {
+                            tempBoard[cell.first][cell.second] = SHIP;
+                        }
+                        placed = true;
+                    }
+                    attempts++;
+                }
+            }
+
+            std::cout << "Флот для " << ownerName << " расставлен случайно\n";
+        }
     // Показать состояние всех кораблей
     void printStatus() const {
         std::cout << "\n=== Флот игрока " << ownerName << " ===\n";

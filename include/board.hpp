@@ -227,7 +227,7 @@ private:
     out << "\n";
 
     //верхняя рамка
-    out << "   ";
+    out << "    ";
     out << "  +";
     for (int i = 0; i < BOARD_SIZE * 2; ++i) out << '-';
     out << "+\n";
@@ -256,7 +256,7 @@ private:
     }
 
     //нижняя рамка
-    out << "   ";
+    out << "    ";
     out << "  +";
     for (int i = 0; i < BOARD_SIZE * 2; ++i) out << '-';
     out << "+\n";
