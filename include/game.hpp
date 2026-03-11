@@ -157,5 +157,4 @@ private:
         return hit;  // возвращаем true при попадании
     }
 };
-
 #endif

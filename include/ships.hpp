@@ -73,7 +73,6 @@ public:
             cells.push_back({r, c});
         }
     }
-
     // getters
     std::string getName() const { return name; }
     int getSize() const { return size; }
@@ -81,7 +80,6 @@ public:
     bool getPlaced() const { return isPlaced; }
     bool getOrientation() const { return isHorizontal; }
     const std::vector<std::pair<int, int>>& getCells() const { return cells; }
-
     // additional functions
     virtual void printInfo() const {
         std::cout << "Корабль: " << name << " (размер: " << size << ")\n";
@@ -96,21 +94,17 @@ public:
             std::cout << "\n";
         }
     }
-
     // reset method
     virtual void reset() {
         hits = 0;
         isPlaced = false;
         cells.clear();
     }
-
 protected:
-
     // Проверка границ доски
     bool isWithinBounds(int row, int col) const {
         return (row >= 0 && row < 10 && col >= 0 && col < 10);
     }
-
     // Проверка соседних клеток
     bool hasAdjacentShip(int row, int col,
                          const std::vector<std::vector<char>>& board) const {
@@ -139,8 +133,6 @@ protected:
                !hasAdjacentShip(row, col, board);
     }
 };
-
-
 // Однопалубный корабль
 class PatrolBoat : public Ship {
 public:
@@ -150,7 +142,6 @@ public:
         return "PatrolBoat";
     }
 };
-
 // Двухпалубный корабль
 class Destroyer : public Ship {
 public:
@@ -160,7 +151,6 @@ public:
         return "Destroyer";
     }
 };
-
 // Трехпалубный корабль
 class Cruiser : public Ship {
 public:
@@ -170,7 +160,6 @@ public:
         return "Cruiser";
     }
 };
-
 // Четырехпалубный корабль
 class Battleship : public Ship {
 public:
@@ -180,5 +169,4 @@ public:
         return "Battleship";
     }
 };
-
 #endif // SHIPS_HPP

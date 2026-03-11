@@ -1,0 +1,26 @@
+# Скомпилированные файлы
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# Директории сборки
+build/
+bin/
+cmake-build-*/
+
+# Файлы IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Временные файлы
+*.log
+*.tmp
+*.temp
+
+# Файлы Google Test (если скачаны локально)
+googletest/📄 Game.h
