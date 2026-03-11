@@ -60,7 +60,13 @@ public:
                 // Показываем оба поля рядом
                 p1->getBoard().printBothGrids(p2->getBoard());
 
-                doTurn(*p1, *p2);
+                bool hit = doTurn(*p1, *p2);
+
+                // Если было попадание и игра не закончена, отменяем увеличение turn
+                if (hit && !p2->getBoard().isFleetDead()) {
+                    turn--;  // тот же игрок ходит снова
+                    std::cout << "\n🎯 Попадание! Ещё один ход!\n";
+                }
 
                 // Статистика уже в printBothGrids, но добавим разделитель
                 std::cout << "\n";
@@ -80,7 +86,17 @@ public:
                     p1->getBoard().printBothGrids(p2->getBoard());
                 }
 
-                doTurn(*p2, *p1);
+                bool hit = doTurn(*p2, *p1);
+
+                // Если было попадание и игра не закончена, отменяем увеличение turn
+                if (hit && !p1->getBoard().isFleetDead()) {
+                    turn--;  // тот же игрок ходит снова
+                    if (typeid(*p2) == typeid(HumanPlayer)) {
+                        std::cout << "\n🎯 Попадание! Ещё один ход!\n";
+                    } else {
+                        std::cout << "\n💻 Компьютер попал! Ходит снова...\n";
+                    }
+                }
 
                 if (p1->getBoard().isFleetDead()) {
                     winnerIndex = 2;
@@ -98,7 +114,7 @@ public:
         clearScreen();
         auto w = getWinnerName();
         if (w) {
-            std::cout << "\n🏆 ПОБЕДИТЕЛЬ: " << *w << " 🏆\n";
+            std::cout << " ПОБЕДИТЕЛЬ: " << *w << "\n";
             // Показываем финальные поля
             if (*winnerIndex == 1) {
                 p1->getBoard().printBothGrids(p2->getBoard());
@@ -115,14 +131,13 @@ public:
     }
 private:
     //shooter выбирает координаты, target принимает выстрел
-    //shooter потом отмечает результат у себя на enemyGrid
-    void doTurn(Player& shooter, Player& target) {
+    bool doTurn(Player& shooter, Player& target) {
         auto [row, col] = shooter.selectShot();
 
         //если уже стреляли туда - !пропуск!
         if (shooter.getBoard().wasShotToEnemy(row, col)) {
             std::cout << shooter.getName() << " already shot there.\n";
-            return;
+            return false;  // возвращаем false, ход не засчитан
         }
 
         //target принимает выстрел
@@ -140,6 +155,8 @@ private:
 
         if (hit && destroyed) std::cout << " (DESTROYED)";
         std::cout << "\n";
+
+        return hit;  // возвращаем true при попадании
     }
 };
 
