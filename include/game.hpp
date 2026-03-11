@@ -39,8 +39,6 @@ public:
         if (*winnerIndex == 1) return p1->getName();
         return p2->getName();
     }
-
-    //основной запуск игры:
     //1) setup
     //2) крутим ходы, пока кто-то не проиграет
     //3) печатаем победителя
