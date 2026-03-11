@@ -1,26 +1,76 @@
+# Директория сборки CMake (стандартная для CLion)
+cmake-build-*/
+build/
+bin/
+out/
+
+# Файлы CLion
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
 # Скомпилированные файлы
 *.o
 *.obj
 *.exe
 *.out
 *.app
+*.dll
+*.so
+*.dylib
 
-# Директории сборки
-build/
-bin/
-cmake-build-*/
-
-# Файлы IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Файлы сборки
+*.ilk
+*.pdb
+*.lib
+*.dSYM/
 
 # Временные файлы
 *.log
 *.tmp
 *.temp
+*.cache
+*.tlog
 
-# Файлы Google Test (если скачаны локально)
-googletest/📄 Game.h
+# Файлы Google Test (если скачается в проект)
+googletest/
+_gtest.*.zip
+FetchContent_*
+
+# Файлы компилятора
+*.sdf
+*.opensdf
+*.opendb
+*.vcxproj*
+*.sln
+*.suo
+*.user
+*.userosscache
+*.vs/
+
+# Резервные копии
+*~
+*.bak
+*.swp
+
+# Файлы покрытия кода
+*.gcda
+*.gcno
+*.gcov
+coverage/
+htmlcov/
+
+# Файлы отладки
+Debug/
+Release/
+x64/
+x86/
+*.db
+*.ipdb
+*.pyc
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
