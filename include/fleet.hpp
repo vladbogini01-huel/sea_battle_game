@@ -1,10 +1,14 @@
 #ifndef FLEET_HPP
 #define FLEET_HPP
 
-#include "../include/ships.hpp"
+#include "ships.hpp"
+#include "constants.hpp"
+
 #include <vector>
 #include <memory>
 #include <iostream>
+#include <random>
+#include <chrono>
 
 
 class Fleet {
