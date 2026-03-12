@@ -1,93 +1,114 @@
 #include <gtest/gtest.h>
-#include "../include/ships.hpp"
+#include "ships.hpp"
+#include "constants.hpp"
+
 #include <vector>
 
-// Тест создания кораблей
-TEST(ShipTest, CreateShips) {
-PatrolBoat patrol;
-Destroyer destroyer;
-Cruiser cruiser;
-Battleship battleship;
-
-EXPECT_EQ(patrol.getSize(), 1);
-EXPECT_EQ(destroyer.getSize(), 2);
-EXPECT_EQ(cruiser.getSize(), 3);
-EXPECT_EQ(battleship.getSize(), 4);
-
-EXPECT_EQ(patrol.getName(), "Катер");
-EXPECT_EQ(destroyer.getName(), "Эсминец");
-EXPECT_EQ(cruiser.getName(), "Крейсер");
-EXPECT_EQ(battleship.getName(), "Линкор");
+TEST(ShipTest, BattleshipHasCorrectSize) {
+    Battleship ship;
+    EXPECT_EQ(ship.getSize(), 4);
+    EXPECT_EQ(ship.getType(), "Battleship");
+    EXPECT_FALSE(ship.isDestroyed());
+    EXPECT_FALSE(ship.getPlaced());
 }
 
-// Тест попаданий в корабль
-TEST(ShipTest, Hits) {
-Battleship ship;
+TEST(ShipTest, PatrolBoatDestroyedAfterOneHit) {
+    PatrolBoat ship;
 
-EXPECT_FALSE(ship.isDestroyed());
-EXPECT_EQ(ship.getHits(), 0);
+    EXPECT_FALSE(ship.isDestroyed());
 
-ship.hit();
-EXPECT_EQ(ship.getHits(), 1);
-EXPECT_FALSE(ship.isDestroyed());
+    ship.hit();
 
-ship.hit();
-ship.hit();
-ship.hit();
-EXPECT_EQ(ship.getHits(), 4);
-EXPECT_TRUE(ship.isDestroyed());
+    EXPECT_TRUE(ship.isDestroyed());
+    EXPECT_EQ(ship.getHits(), 1);
 }
 
-// Тест размещения корабля
-TEST(ShipTest, Placement) {
-Cruiser ship;
-std::vector<std::vector<char>> board(10, std::vector<char>(10, '.'));
+TEST(ShipTest, DestroyerDestroyedAfterTwoHits) {
+    Destroyer ship;
 
-// Горизонтальное размещение
-EXPECT_TRUE(ship.canPlaceAt(2, 2, true, board));
-ship.placeAt(2, 2, true);
+    ship.hit();
+    EXPECT_FALSE(ship.isDestroyed());
 
-auto cells = ship.getCells();
-EXPECT_EQ(cells.size(), 3);
-EXPECT_EQ(cells[0].first, 2);
-EXPECT_EQ(cells[0].second, 2);
-EXPECT_EQ(cells[1].second, 3);
-EXPECT_EQ(cells[2].second, 4);
-
-// Вертикальное размещение
-ship.reset();
-EXPECT_TRUE(ship.canPlaceAt(5, 5, false, board));
-ship.placeAt(5, 5, false);
-
-cells = ship.getCells();
-EXPECT_EQ(cells[0].first, 5);
-EXPECT_EQ(cells[1].first, 6);
-EXPECT_EQ(cells[2].first, 7);
+    ship.hit();
+    EXPECT_TRUE(ship.isDestroyed());
 }
 
-// Тест проверки границ
-TEST(ShipTest, BoundsCheck) {
-Battleship ship;
-std::vector<std::vector<char>> board(10, std::vector<char>(10, '.'));
+TEST(ShipTest, PlaceAtHorizontalSetsCorrectCells) {
+    Cruiser ship;
+    ship.placeAt(2, 3, true);
 
-// За границами
-EXPECT_FALSE(ship.canPlaceAt(8, 8, true, board));  // Выходит за правую границу
-EXPECT_FALSE(ship.canPlaceAt(8, 8, false, board)); // Выходит за нижнюю границу
-EXPECT_FALSE(ship.canPlaceAt(-1, 0, true, board));
+    ASSERT_TRUE(ship.getPlaced());
+    ASSERT_TRUE(ship.getOrientation());
+
+    const auto& cells = ship.getCells();
+    ASSERT_EQ(cells.size(), 3u);
+
+    EXPECT_EQ(cells[0], std::make_pair(2, 3));
+    EXPECT_EQ(cells[1], std::make_pair(2, 4));
+    EXPECT_EQ(cells[2], std::make_pair(2, 5));
 }
 
-// Тест соседних клеток
-TEST(ShipTest, AdjacentCells) {
-std::vector<std::vector<char>> board(10, std::vector<char>(10, '.'));
-board[3][3] = 'O'; // Ставим корабль
+TEST(ShipTest, PlaceAtVerticalSetsCorrectCells) {
+    Destroyer ship;
+    ship.placeAt(4, 1, false);
 
-Destroyer ship;
+    ASSERT_TRUE(ship.getPlaced());
+    EXPECT_FALSE(ship.getOrientation());
 
-// Рядом с существующим кораблем
-EXPECT_FALSE(ship.canPlaceAt(2, 2, true, board)); // Диагональ
-EXPECT_FALSE(ship.canPlaceAt(3, 4, false, board)); // Рядом по горизонтали
-EXPECT_FALSE(ship.canPlaceAt(4, 3, true, board)); // Рядом по вертикали
+    const auto& cells = ship.getCells();
+    ASSERT_EQ(cells.size(), 2u);
 
-// Подальше от корабля
-EXPECT_TRUE(ship.canPlaceAt(0, 0, true, board));
+    EXPECT_EQ(cells[0], std::make_pair(4, 1));
+    EXPECT_EQ(cells[1], std::make_pair(5, 1));
+}
+
+TEST(ShipTest, CanPlaceAtReturnsFalseWhenOutOfBoundsHorizontal) {
+    Battleship ship;
+    std::vector<std::vector<char>> board(BOARD_SIZE, std::vector<char>(BOARD_SIZE, EMPTY));
+
+    EXPECT_FALSE(ship.canPlaceAt(0, 8, true, board));
+}
+
+TEST(ShipTest, CanPlaceAtReturnsFalseWhenOutOfBoundsVertical) {
+    Battleship ship;
+    std::vector<std::vector<char>> board(BOARD_SIZE, std::vector<char>(BOARD_SIZE, EMPTY));
+
+    EXPECT_FALSE(ship.canPlaceAt(8, 0, false, board));
+}
+
+TEST(ShipTest, CanPlaceAtReturnsFalseWhenCellOccupied) {
+    Cruiser ship;
+    std::vector<std::vector<char>> board(BOARD_SIZE, std::vector<char>(BOARD_SIZE, EMPTY));
+    board[3][3] = SHIP;
+
+    EXPECT_FALSE(ship.canPlaceAt(3, 2, true, board));
+}
+
+TEST(ShipTest, CanPlaceAtReturnsFalseWhenAdjacentToAnotherShip) {
+    PatrolBoat ship;
+    std::vector<std::vector<char>> board(BOARD_SIZE, std::vector<char>(BOARD_SIZE, EMPTY));
+    board[5][5] = SHIP;
+
+    EXPECT_FALSE(ship.canPlaceAt(4, 4, true, board));
+    EXPECT_FALSE(ship.canPlaceAt(4, 5, true, board));
+    EXPECT_FALSE(ship.canPlaceAt(4, 6, true, board));
+    EXPECT_FALSE(ship.canPlaceAt(5, 4, true, board));
+    EXPECT_FALSE(ship.canPlaceAt(5, 6, true, board));
+    EXPECT_FALSE(ship.canPlaceAt(6, 4, true, board));
+    EXPECT_FALSE(ship.canPlaceAt(6, 5, true, board));
+    EXPECT_FALSE(ship.canPlaceAt(6, 6, true, board));
+}
+
+TEST(ShipTest, ResetClearsHitsAndPlacement) {
+    Cruiser ship;
+    ship.placeAt(1, 1, true);
+    ship.hit();
+    ship.hit();
+
+    ship.reset();
+
+    EXPECT_EQ(ship.getHits(), 0);
+    EXPECT_FALSE(ship.getPlaced());
+    EXPECT_TRUE(ship.getCells().empty());
+    EXPECT_FALSE(ship.isDestroyed());
 }

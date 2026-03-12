@@ -1,8 +1,12 @@
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 
+#include <iostream>
+#include <cstdlib>
+
 const int BOARD_SIZE = 10;
-//sings
+
+// signs
 const char EMPTY = '.';
 const char SHIP = 'O';
 const char HIT = 'X';
@@ -22,15 +26,11 @@ const int CRUISER_SIZE = 3;
 const int DESTROYER_SIZE = 2;
 const int PATROL_BOAT_SIZE = 1;
 
-
 const bool HORIZONTAL = true;
 const bool VERTICAL = false;
 
-// coordintaes
-
-
+// coordinates
 const char COL_LETTERS[BOARD_SIZE] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
-
 
 const int MIN_ROW = 1;
 const int MAX_ROW = 10;
@@ -39,19 +39,16 @@ const char MAX_COL = 'J';
 
 // letter into number
 inline int colLetterToIndex(char letter) {
-
     return letter - 'A';
 }
 
 // number into letter
 inline char colIndexToLetter(int index) {
-
     return 'A' + index;
 }
 
-
 // Очистка экрана
-void clearScreen() {
+inline void clearScreen() {
 #ifdef _WIN32
     system("cls");
 #else
@@ -60,7 +57,7 @@ void clearScreen() {
 }
 
 // Пауза до нажатия Enter
-void waitForEnter() {
+inline void waitForEnter() {
     std::cout << "\nНажмите Enter для продолжения...";
     std::cin.get();
 }

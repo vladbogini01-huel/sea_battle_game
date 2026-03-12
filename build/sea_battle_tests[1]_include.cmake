@@ -1,0 +1,5 @@
+if(EXISTS "/home/yaga/sea_battle_game/build/sea_battle_tests[1]_tests.cmake")
+  include("/home/yaga/sea_battle_game/build/sea_battle_tests[1]_tests.cmake")
+else()
+  add_test(sea_battle_tests_NOT_BUILT sea_battle_tests_NOT_BUILT)
+endif()

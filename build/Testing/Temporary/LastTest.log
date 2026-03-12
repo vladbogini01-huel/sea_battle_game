@@ -1,0 +1,1228 @@
+Start testing: Mar 13 00:00 MSK
+----------------------------------------------------------
+1/43 Testing: ShipTest.BattleshipHasCorrectSize
+1/43 Test: ShipTest.BattleshipHasCorrectSize
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=ShipTest.BattleshipHasCorrectSize" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"ShipTest.BattleshipHasCorrectSize" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ShipTest.BattleshipHasCorrectSize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ShipTest
+[ RUN      ] ShipTest.BattleshipHasCorrectSize
+[       OK ] ShipTest.BattleshipHasCorrectSize (0 ms)
+[----------] 1 test from ShipTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ShipTest.BattleshipHasCorrectSize" end time: Mar 13 00:00 MSK
+"ShipTest.BattleshipHasCorrectSize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/43 Testing: ShipTest.PatrolBoatDestroyedAfterOneHit
+2/43 Test: ShipTest.PatrolBoatDestroyedAfterOneHit
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=ShipTest.PatrolBoatDestroyedAfterOneHit" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"ShipTest.PatrolBoatDestroyedAfterOneHit" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ShipTest.PatrolBoatDestroyedAfterOneHit
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ShipTest
+[ RUN      ] ShipTest.PatrolBoatDestroyedAfterOneHit
+[       OK ] ShipTest.PatrolBoatDestroyedAfterOneHit (0 ms)
+[----------] 1 test from ShipTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ShipTest.PatrolBoatDestroyedAfterOneHit" end time: Mar 13 00:00 MSK
+"ShipTest.PatrolBoatDestroyedAfterOneHit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/43 Testing: ShipTest.DestroyerDestroyedAfterTwoHits
+3/43 Test: ShipTest.DestroyerDestroyedAfterTwoHits
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=ShipTest.DestroyerDestroyedAfterTwoHits" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"ShipTest.DestroyerDestroyedAfterTwoHits" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ShipTest.DestroyerDestroyedAfterTwoHits
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ShipTest
+[ RUN      ] ShipTest.DestroyerDestroyedAfterTwoHits
+[       OK ] ShipTest.DestroyerDestroyedAfterTwoHits (0 ms)
+[----------] 1 test from ShipTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ShipTest.DestroyerDestroyedAfterTwoHits" end time: Mar 13 00:00 MSK
+"ShipTest.DestroyerDestroyedAfterTwoHits" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/43 Testing: ShipTest.PlaceAtHorizontalSetsCorrectCells
+4/43 Test: ShipTest.PlaceAtHorizontalSetsCorrectCells
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=ShipTest.PlaceAtHorizontalSetsCorrectCells" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"ShipTest.PlaceAtHorizontalSetsCorrectCells" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ShipTest.PlaceAtHorizontalSetsCorrectCells
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ShipTest
+[ RUN      ] ShipTest.PlaceAtHorizontalSetsCorrectCells
+[       OK ] ShipTest.PlaceAtHorizontalSetsCorrectCells (0 ms)
+[----------] 1 test from ShipTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ShipTest.PlaceAtHorizontalSetsCorrectCells" end time: Mar 13 00:00 MSK
+"ShipTest.PlaceAtHorizontalSetsCorrectCells" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/43 Testing: ShipTest.PlaceAtVerticalSetsCorrectCells
+5/43 Test: ShipTest.PlaceAtVerticalSetsCorrectCells
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=ShipTest.PlaceAtVerticalSetsCorrectCells" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"ShipTest.PlaceAtVerticalSetsCorrectCells" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ShipTest.PlaceAtVerticalSetsCorrectCells
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ShipTest
+[ RUN      ] ShipTest.PlaceAtVerticalSetsCorrectCells
+[       OK ] ShipTest.PlaceAtVerticalSetsCorrectCells (0 ms)
+[----------] 1 test from ShipTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ShipTest.PlaceAtVerticalSetsCorrectCells" end time: Mar 13 00:00 MSK
+"ShipTest.PlaceAtVerticalSetsCorrectCells" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/43 Testing: ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsHorizontal
+6/43 Test: ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsHorizontal
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsHorizontal" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsHorizontal" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsHorizontal
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ShipTest
+[ RUN      ] ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsHorizontal
+[       OK ] ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsHorizontal (0 ms)
+[----------] 1 test from ShipTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsHorizontal" end time: Mar 13 00:00 MSK
+"ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsHorizontal" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/43 Testing: ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsVertical
+7/43 Test: ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsVertical
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsVertical" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsVertical" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsVertical
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ShipTest
+[ RUN      ] ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsVertical
+[       OK ] ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsVertical (0 ms)
+[----------] 1 test from ShipTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsVertical" end time: Mar 13 00:00 MSK
+"ShipTest.CanPlaceAtReturnsFalseWhenOutOfBoundsVertical" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/43 Testing: ShipTest.CanPlaceAtReturnsFalseWhenCellOccupied
+8/43 Test: ShipTest.CanPlaceAtReturnsFalseWhenCellOccupied
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=ShipTest.CanPlaceAtReturnsFalseWhenCellOccupied" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"ShipTest.CanPlaceAtReturnsFalseWhenCellOccupied" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ShipTest.CanPlaceAtReturnsFalseWhenCellOccupied
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ShipTest
+[ RUN      ] ShipTest.CanPlaceAtReturnsFalseWhenCellOccupied
+[       OK ] ShipTest.CanPlaceAtReturnsFalseWhenCellOccupied (0 ms)
+[----------] 1 test from ShipTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ShipTest.CanPlaceAtReturnsFalseWhenCellOccupied" end time: Mar 13 00:00 MSK
+"ShipTest.CanPlaceAtReturnsFalseWhenCellOccupied" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/43 Testing: ShipTest.CanPlaceAtReturnsFalseWhenAdjacentToAnotherShip
+9/43 Test: ShipTest.CanPlaceAtReturnsFalseWhenAdjacentToAnotherShip
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=ShipTest.CanPlaceAtReturnsFalseWhenAdjacentToAnotherShip" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"ShipTest.CanPlaceAtReturnsFalseWhenAdjacentToAnotherShip" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ShipTest.CanPlaceAtReturnsFalseWhenAdjacentToAnotherShip
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ShipTest
+[ RUN      ] ShipTest.CanPlaceAtReturnsFalseWhenAdjacentToAnotherShip
+[       OK ] ShipTest.CanPlaceAtReturnsFalseWhenAdjacentToAnotherShip (0 ms)
+[----------] 1 test from ShipTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ShipTest.CanPlaceAtReturnsFalseWhenAdjacentToAnotherShip" end time: Mar 13 00:00 MSK
+"ShipTest.CanPlaceAtReturnsFalseWhenAdjacentToAnotherShip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/43 Testing: ShipTest.ResetClearsHitsAndPlacement
+10/43 Test: ShipTest.ResetClearsHitsAndPlacement
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=ShipTest.ResetClearsHitsAndPlacement" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"ShipTest.ResetClearsHitsAndPlacement" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ShipTest.ResetClearsHitsAndPlacement
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ShipTest
+[ RUN      ] ShipTest.ResetClearsHitsAndPlacement
+[       OK ] ShipTest.ResetClearsHitsAndPlacement (0 ms)
+[----------] 1 test from ShipTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ShipTest.ResetClearsHitsAndPlacement" end time: Mar 13 00:00 MSK
+"ShipTest.ResetClearsHitsAndPlacement" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/43 Testing: FleetTest.FleetHasTenShipsAfterCreation
+11/43 Test: FleetTest.FleetHasTenShipsAfterCreation
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=FleetTest.FleetHasTenShipsAfterCreation" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"FleetTest.FleetHasTenShipsAfterCreation" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FleetTest.FleetHasTenShipsAfterCreation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FleetTest
+[ RUN      ] FleetTest.FleetHasTenShipsAfterCreation
+Создан флот для Player из 10 кораблей
+[       OK ] FleetTest.FleetHasTenShipsAfterCreation (0 ms)
+[----------] 1 test from FleetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FleetTest.FleetHasTenShipsAfterCreation" end time: Mar 13 00:00 MSK
+"FleetTest.FleetHasTenShipsAfterCreation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/43 Testing: FleetTest.GetShipReturnsNullForInvalidIndex
+12/43 Test: FleetTest.GetShipReturnsNullForInvalidIndex
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=FleetTest.GetShipReturnsNullForInvalidIndex" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"FleetTest.GetShipReturnsNullForInvalidIndex" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FleetTest.GetShipReturnsNullForInvalidIndex
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FleetTest
+[ RUN      ] FleetTest.GetShipReturnsNullForInvalidIndex
+Создан флот для Player из 10 кораблей
+[       OK ] FleetTest.GetShipReturnsNullForInvalidIndex (0 ms)
+[----------] 1 test from FleetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FleetTest.GetShipReturnsNullForInvalidIndex" end time: Mar 13 00:00 MSK
+"FleetTest.GetShipReturnsNullForInvalidIndex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/43 Testing: FleetTest.GetShipReturnsCorrectTypesByStandardOrder
+13/43 Test: FleetTest.GetShipReturnsCorrectTypesByStandardOrder
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=FleetTest.GetShipReturnsCorrectTypesByStandardOrder" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"FleetTest.GetShipReturnsCorrectTypesByStandardOrder" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FleetTest.GetShipReturnsCorrectTypesByStandardOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FleetTest
+[ RUN      ] FleetTest.GetShipReturnsCorrectTypesByStandardOrder
+Создан флот для Player из 10 кораблей
+[       OK ] FleetTest.GetShipReturnsCorrectTypesByStandardOrder (0 ms)
+[----------] 1 test from FleetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FleetTest.GetShipReturnsCorrectTypesByStandardOrder" end time: Mar 13 00:00 MSK
+"FleetTest.GetShipReturnsCorrectTypesByStandardOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/43 Testing: FleetTest.FindShipAtReturnsShipWhenCellBelongsToShip
+14/43 Test: FleetTest.FindShipAtReturnsShipWhenCellBelongsToShip
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=FleetTest.FindShipAtReturnsShipWhenCellBelongsToShip" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"FleetTest.FindShipAtReturnsShipWhenCellBelongsToShip" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FleetTest.FindShipAtReturnsShipWhenCellBelongsToShip
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FleetTest
+[ RUN      ] FleetTest.FindShipAtReturnsShipWhenCellBelongsToShip
+Создан флот для Player из 10 кораблей
+[       OK ] FleetTest.FindShipAtReturnsShipWhenCellBelongsToShip (0 ms)
+[----------] 1 test from FleetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FleetTest.FindShipAtReturnsShipWhenCellBelongsToShip" end time: Mar 13 00:00 MSK
+"FleetTest.FindShipAtReturnsShipWhenCellBelongsToShip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/43 Testing: FleetTest.FindShipAtReturnsNullWhenNoShipAtCell
+15/43 Test: FleetTest.FindShipAtReturnsNullWhenNoShipAtCell
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=FleetTest.FindShipAtReturnsNullWhenNoShipAtCell" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"FleetTest.FindShipAtReturnsNullWhenNoShipAtCell" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FleetTest.FindShipAtReturnsNullWhenNoShipAtCell
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FleetTest
+[ RUN      ] FleetTest.FindShipAtReturnsNullWhenNoShipAtCell
+Создан флот для Player из 10 кораблей
+[       OK ] FleetTest.FindShipAtReturnsNullWhenNoShipAtCell (0 ms)
+[----------] 1 test from FleetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FleetTest.FindShipAtReturnsNullWhenNoShipAtCell" end time: Mar 13 00:00 MSK
+"FleetTest.FindShipAtReturnsNullWhenNoShipAtCell" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/43 Testing: FleetTest.ProcessShotReturnsFalseOnEmptyCell
+16/43 Test: FleetTest.ProcessShotReturnsFalseOnEmptyCell
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=FleetTest.ProcessShotReturnsFalseOnEmptyCell" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"FleetTest.ProcessShotReturnsFalseOnEmptyCell" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FleetTest.ProcessShotReturnsFalseOnEmptyCell
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FleetTest
+[ RUN      ] FleetTest.ProcessShotReturnsFalseOnEmptyCell
+Создан флот для Player из 10 кораблей
+[       OK ] FleetTest.ProcessShotReturnsFalseOnEmptyCell (0 ms)
+[----------] 1 test from FleetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FleetTest.ProcessShotReturnsFalseOnEmptyCell" end time: Mar 13 00:00 MSK
+"FleetTest.ProcessShotReturnsFalseOnEmptyCell" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/43 Testing: FleetTest.ProcessShotReturnsTrueOnShipCell
+17/43 Test: FleetTest.ProcessShotReturnsTrueOnShipCell
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=FleetTest.ProcessShotReturnsTrueOnShipCell" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"FleetTest.ProcessShotReturnsTrueOnShipCell" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FleetTest.ProcessShotReturnsTrueOnShipCell
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FleetTest
+[ RUN      ] FleetTest.ProcessShotReturnsTrueOnShipCell
+Создан флот для Player из 10 кораблей
+Корабль Катер потоплен!
+[       OK ] FleetTest.ProcessShotReturnsTrueOnShipCell (0 ms)
+[----------] 1 test from FleetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FleetTest.ProcessShotReturnsTrueOnShipCell" end time: Mar 13 00:00 MSK
+"FleetTest.ProcessShotReturnsTrueOnShipCell" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/43 Testing: FleetTest.RemainingCountDecreasesWhenShipDestroyed
+18/43 Test: FleetTest.RemainingCountDecreasesWhenShipDestroyed
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=FleetTest.RemainingCountDecreasesWhenShipDestroyed" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"FleetTest.RemainingCountDecreasesWhenShipDestroyed" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FleetTest.RemainingCountDecreasesWhenShipDestroyed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FleetTest
+[ RUN      ] FleetTest.RemainingCountDecreasesWhenShipDestroyed
+Создан флот для Player из 10 кораблей
+Корабль Катер потоплен!
+[       OK ] FleetTest.RemainingCountDecreasesWhenShipDestroyed (0 ms)
+[----------] 1 test from FleetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FleetTest.RemainingCountDecreasesWhenShipDestroyed" end time: Mar 13 00:00 MSK
+"FleetTest.RemainingCountDecreasesWhenShipDestroyed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/43 Testing: FleetTest.IsAllDestroyedReturnsTrueWhenAllShipsDestroyed
+19/43 Test: FleetTest.IsAllDestroyedReturnsTrueWhenAllShipsDestroyed
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=FleetTest.IsAllDestroyedReturnsTrueWhenAllShipsDestroyed" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"FleetTest.IsAllDestroyedReturnsTrueWhenAllShipsDestroyed" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FleetTest.IsAllDestroyedReturnsTrueWhenAllShipsDestroyed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FleetTest
+[ RUN      ] FleetTest.IsAllDestroyedReturnsTrueWhenAllShipsDestroyed
+Создан флот для Player из 10 кораблей
+Корабль Линкор потоплен!
+Корабль Крейсер потоплен!
+Корабль Крейсер потоплен!
+Корабль Эсминец потоплен!
+Корабль Эсминец потоплен!
+Корабль Эсминец потоплен!
+Корабль Катер потоплен!
+Корабль Катер потоплен!
+Корабль Катер потоплен!
+Корабль Катер потоплен!
+[       OK ] FleetTest.IsAllDestroyedReturnsTrueWhenAllShipsDestroyed (0 ms)
+[----------] 1 test from FleetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FleetTest.IsAllDestroyedReturnsTrueWhenAllShipsDestroyed" end time: Mar 13 00:00 MSK
+"FleetTest.IsAllDestroyedReturnsTrueWhenAllShipsDestroyed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/43 Testing: FleetTest.ResetRestoresAllShipsToAliveAndUnplaced
+20/43 Test: FleetTest.ResetRestoresAllShipsToAliveAndUnplaced
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=FleetTest.ResetRestoresAllShipsToAliveAndUnplaced" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"FleetTest.ResetRestoresAllShipsToAliveAndUnplaced" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FleetTest.ResetRestoresAllShipsToAliveAndUnplaced
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FleetTest
+[ RUN      ] FleetTest.ResetRestoresAllShipsToAliveAndUnplaced
+Создан флот для Player из 10 кораблей
+Корабль Линкор потоплен!
+[       OK ] FleetTest.ResetRestoresAllShipsToAliveAndUnplaced (0 ms)
+[----------] 1 test from FleetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FleetTest.ResetRestoresAllShipsToAliveAndUnplaced" end time: Mar 13 00:00 MSK
+"FleetTest.ResetRestoresAllShipsToAliveAndUnplaced" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/43 Testing: BoardTest.InBoundsReturnsTrueForValidCells
+21/43 Test: BoardTest.InBoundsReturnsTrueForValidCells
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.InBoundsReturnsTrueForValidCells" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.InBoundsReturnsTrueForValidCells" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.InBoundsReturnsTrueForValidCells
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.InBoundsReturnsTrueForValidCells
+Создан флот для Player из 10 кораблей
+[       OK ] BoardTest.InBoundsReturnsTrueForValidCells (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.InBoundsReturnsTrueForValidCells" end time: Mar 13 00:00 MSK
+"BoardTest.InBoundsReturnsTrueForValidCells" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/43 Testing: BoardTest.InBoundsReturnsFalseForInvalidCells
+22/43 Test: BoardTest.InBoundsReturnsFalseForInvalidCells
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.InBoundsReturnsFalseForInvalidCells" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.InBoundsReturnsFalseForInvalidCells" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.InBoundsReturnsFalseForInvalidCells
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.InBoundsReturnsFalseForInvalidCells
+Создан флот для Player из 10 кораблей
+[       OK ] BoardTest.InBoundsReturnsFalseForInvalidCells (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.InBoundsReturnsFalseForInvalidCells" end time: Mar 13 00:00 MSK
+"BoardTest.InBoundsReturnsFalseForInvalidCells" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/43 Testing: BoardTest.ReceiveShotReturnsFalseForOutOfBounds
+23/43 Test: BoardTest.ReceiveShotReturnsFalseForOutOfBounds
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.ReceiveShotReturnsFalseForOutOfBounds" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.ReceiveShotReturnsFalseForOutOfBounds" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.ReceiveShotReturnsFalseForOutOfBounds
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.ReceiveShotReturnsFalseForOutOfBounds
+Создан флот для Player из 10 кораблей
+[       OK ] BoardTest.ReceiveShotReturnsFalseForOutOfBounds (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.ReceiveShotReturnsFalseForOutOfBounds" end time: Mar 13 00:00 MSK
+"BoardTest.ReceiveShotReturnsFalseForOutOfBounds" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/43 Testing: BoardTest.ReceiveShotReturnsFalseOnEmptyCellAndMarksMiss
+24/43 Test: BoardTest.ReceiveShotReturnsFalseOnEmptyCellAndMarksMiss
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.ReceiveShotReturnsFalseOnEmptyCellAndMarksMiss" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.ReceiveShotReturnsFalseOnEmptyCellAndMarksMiss" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.ReceiveShotReturnsFalseOnEmptyCellAndMarksMiss
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.ReceiveShotReturnsFalseOnEmptyCellAndMarksMiss
+Создан флот для Player из 10 кораблей
+[       OK ] BoardTest.ReceiveShotReturnsFalseOnEmptyCellAndMarksMiss (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.ReceiveShotReturnsFalseOnEmptyCellAndMarksMiss" end time: Mar 13 00:00 MSK
+"BoardTest.ReceiveShotReturnsFalseOnEmptyCellAndMarksMiss" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/43 Testing: BoardTest.ReceiveShotReturnsTrueOnShipCell
+25/43 Test: BoardTest.ReceiveShotReturnsTrueOnShipCell
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.ReceiveShotReturnsTrueOnShipCell" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.ReceiveShotReturnsTrueOnShipCell" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.ReceiveShotReturnsTrueOnShipCell
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.ReceiveShotReturnsTrueOnShipCell
+Создан флот для Player из 10 кораблей
+Корабль Катер потоплен!
+[       OK ] BoardTest.ReceiveShotReturnsTrueOnShipCell (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.ReceiveShotReturnsTrueOnShipCell" end time: Mar 13 00:00 MSK
+"BoardTest.ReceiveShotReturnsTrueOnShipCell" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/43 Testing: BoardTest.ReceiveShotMarksDestroyedShipCells
+26/43 Test: BoardTest.ReceiveShotMarksDestroyedShipCells
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.ReceiveShotMarksDestroyedShipCells" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.ReceiveShotMarksDestroyedShipCells" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.ReceiveShotMarksDestroyedShipCells
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.ReceiveShotMarksDestroyedShipCells
+Создан флот для Player из 10 кораблей
+Корабль Эсминец потоплен!
+[       OK ] BoardTest.ReceiveShotMarksDestroyedShipCells (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.ReceiveShotMarksDestroyedShipCells" end time: Mar 13 00:00 MSK
+"BoardTest.ReceiveShotMarksDestroyedShipCells" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/43 Testing: BoardTest.MarkEnemyShotMarksMiss
+27/43 Test: BoardTest.MarkEnemyShotMarksMiss
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.MarkEnemyShotMarksMiss" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.MarkEnemyShotMarksMiss" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.MarkEnemyShotMarksMiss
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.MarkEnemyShotMarksMiss
+Создан флот для Player из 10 кораблей
+[       OK ] BoardTest.MarkEnemyShotMarksMiss (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.MarkEnemyShotMarksMiss" end time: Mar 13 00:00 MSK
+"BoardTest.MarkEnemyShotMarksMiss" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/43 Testing: BoardTest.MarkEnemyShotMarksHit
+28/43 Test: BoardTest.MarkEnemyShotMarksHit
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.MarkEnemyShotMarksHit" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.MarkEnemyShotMarksHit" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.MarkEnemyShotMarksHit
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.MarkEnemyShotMarksHit
+Создан флот для Player из 10 кораблей
+[       OK ] BoardTest.MarkEnemyShotMarksHit (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.MarkEnemyShotMarksHit" end time: Mar 13 00:00 MSK
+"BoardTest.MarkEnemyShotMarksHit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/43 Testing: BoardTest.MarkEnemyShotMarksDestroyed
+29/43 Test: BoardTest.MarkEnemyShotMarksDestroyed
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.MarkEnemyShotMarksDestroyed" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.MarkEnemyShotMarksDestroyed" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.MarkEnemyShotMarksDestroyed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.MarkEnemyShotMarksDestroyed
+Создан флот для Player из 10 кораблей
+[       OK ] BoardTest.MarkEnemyShotMarksDestroyed (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.MarkEnemyShotMarksDestroyed" end time: Mar 13 00:00 MSK
+"BoardTest.MarkEnemyShotMarksDestroyed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/43 Testing: BoardTest.WasShotToEnemyReturnsFalseForUnknownCell
+30/43 Test: BoardTest.WasShotToEnemyReturnsFalseForUnknownCell
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.WasShotToEnemyReturnsFalseForUnknownCell" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.WasShotToEnemyReturnsFalseForUnknownCell" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.WasShotToEnemyReturnsFalseForUnknownCell
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.WasShotToEnemyReturnsFalseForUnknownCell
+Создан флот для Player из 10 кораблей
+[       OK ] BoardTest.WasShotToEnemyReturnsFalseForUnknownCell (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.WasShotToEnemyReturnsFalseForUnknownCell" end time: Mar 13 00:00 MSK
+"BoardTest.WasShotToEnemyReturnsFalseForUnknownCell" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/43 Testing: BoardTest.IsFleetDeadReturnsFalseAtStart
+31/43 Test: BoardTest.IsFleetDeadReturnsFalseAtStart
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.IsFleetDeadReturnsFalseAtStart" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.IsFleetDeadReturnsFalseAtStart" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.IsFleetDeadReturnsFalseAtStart
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.IsFleetDeadReturnsFalseAtStart
+Создан флот для Player из 10 кораблей
+[       OK ] BoardTest.IsFleetDeadReturnsFalseAtStart (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.IsFleetDeadReturnsFalseAtStart" end time: Mar 13 00:00 MSK
+"BoardTest.IsFleetDeadReturnsFalseAtStart" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/43 Testing: BoardTest.IsFleetDeadReturnsTrueWhenAllShipsDestroyed
+32/43 Test: BoardTest.IsFleetDeadReturnsTrueWhenAllShipsDestroyed
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.IsFleetDeadReturnsTrueWhenAllShipsDestroyed" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.IsFleetDeadReturnsTrueWhenAllShipsDestroyed" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.IsFleetDeadReturnsTrueWhenAllShipsDestroyed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.IsFleetDeadReturnsTrueWhenAllShipsDestroyed
+Создан флот для Player из 10 кораблей
+Корабль Линкор потоплен!
+Корабль Крейсер потоплен!
+Корабль Крейсер потоплен!
+Корабль Эсминец потоплен!
+Корабль Эсминец потоплен!
+Корабль Эсминец потоплен!
+Корабль Катер потоплен!
+Корабль Катер потоплен!
+Корабль Катер потоплен!
+Корабль Катер потоплен!
+[       OK ] BoardTest.IsFleetDeadReturnsTrueWhenAllShipsDestroyed (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.IsFleetDeadReturnsTrueWhenAllShipsDestroyed" end time: Mar 13 00:00 MSK
+"BoardTest.IsFleetDeadReturnsTrueWhenAllShipsDestroyed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/43 Testing: BoardTest.PlaceFleetTestActuallyPlacesShips
+33/43 Test: BoardTest.PlaceFleetTestActuallyPlacesShips
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=BoardTest.PlaceFleetTestActuallyPlacesShips" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"BoardTest.PlaceFleetTestActuallyPlacesShips" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BoardTest.PlaceFleetTestActuallyPlacesShips
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BoardTest
+[ RUN      ] BoardTest.PlaceFleetTestActuallyPlacesShips
+Создан флот для Player из 10 кораблей
+Флот для Player расставлен случайно
+[       OK ] BoardTest.PlaceFleetTestActuallyPlacesShips (0 ms)
+[----------] 1 test from BoardTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTest.PlaceFleetTestActuallyPlacesShips" end time: Mar 13 00:00 MSK
+"BoardTest.PlaceFleetTestActuallyPlacesShips" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/43 Testing: PlayerTest.HumanPlayerParseShotInputAcceptsValidInput
+34/43 Test: PlayerTest.HumanPlayerParseShotInputAcceptsValidInput
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=PlayerTest.HumanPlayerParseShotInputAcceptsValidInput" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"PlayerTest.HumanPlayerParseShotInputAcceptsValidInput" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PlayerTest.HumanPlayerParseShotInputAcceptsValidInput
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PlayerTest
+[ RUN      ] PlayerTest.HumanPlayerParseShotInputAcceptsValidInput
+Создан флот для User из 10 кораблей
+[       OK ] PlayerTest.HumanPlayerParseShotInputAcceptsValidInput (0 ms)
+[----------] 1 test from PlayerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PlayerTest.HumanPlayerParseShotInputAcceptsValidInput" end time: Mar 13 00:00 MSK
+"PlayerTest.HumanPlayerParseShotInputAcceptsValidInput" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/43 Testing: PlayerTest.HumanPlayerParseShotInputRejectsInvalidColumn
+35/43 Test: PlayerTest.HumanPlayerParseShotInputRejectsInvalidColumn
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=PlayerTest.HumanPlayerParseShotInputRejectsInvalidColumn" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"PlayerTest.HumanPlayerParseShotInputRejectsInvalidColumn" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PlayerTest.HumanPlayerParseShotInputRejectsInvalidColumn
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PlayerTest
+[ RUN      ] PlayerTest.HumanPlayerParseShotInputRejectsInvalidColumn
+Создан флот для User из 10 кораблей
+[       OK ] PlayerTest.HumanPlayerParseShotInputRejectsInvalidColumn (0 ms)
+[----------] 1 test from PlayerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PlayerTest.HumanPlayerParseShotInputRejectsInvalidColumn" end time: Mar 13 00:00 MSK
+"PlayerTest.HumanPlayerParseShotInputRejectsInvalidColumn" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/43 Testing: PlayerTest.HumanPlayerParseShotInputRejectsInvalidRow
+36/43 Test: PlayerTest.HumanPlayerParseShotInputRejectsInvalidRow
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=PlayerTest.HumanPlayerParseShotInputRejectsInvalidRow" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"PlayerTest.HumanPlayerParseShotInputRejectsInvalidRow" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PlayerTest.HumanPlayerParseShotInputRejectsInvalidRow
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PlayerTest
+[ RUN      ] PlayerTest.HumanPlayerParseShotInputRejectsInvalidRow
+Создан флот для User из 10 кораблей
+[       OK ] PlayerTest.HumanPlayerParseShotInputRejectsInvalidRow (0 ms)
+[----------] 1 test from PlayerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PlayerTest.HumanPlayerParseShotInputRejectsInvalidRow" end time: Mar 13 00:00 MSK
+"PlayerTest.HumanPlayerParseShotInputRejectsInvalidRow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/43 Testing: PlayerTest.DummyBotPlayerReturnsValidCoordinates
+37/43 Test: PlayerTest.DummyBotPlayerReturnsValidCoordinates
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=PlayerTest.DummyBotPlayerReturnsValidCoordinates" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"PlayerTest.DummyBotPlayerReturnsValidCoordinates" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PlayerTest.DummyBotPlayerReturnsValidCoordinates
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PlayerTest
+[ RUN      ] PlayerTest.DummyBotPlayerReturnsValidCoordinates
+Создан флот для Bot из 10 кораблей
+[       OK ] PlayerTest.DummyBotPlayerReturnsValidCoordinates (0 ms)
+[----------] 1 test from PlayerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PlayerTest.DummyBotPlayerReturnsValidCoordinates" end time: Mar 13 00:00 MSK
+"PlayerTest.DummyBotPlayerReturnsValidCoordinates" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/43 Testing: PlayerTest.DummyBotPlayerFirstHundredShotsAreUnique
+38/43 Test: PlayerTest.DummyBotPlayerFirstHundredShotsAreUnique
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=PlayerTest.DummyBotPlayerFirstHundredShotsAreUnique" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"PlayerTest.DummyBotPlayerFirstHundredShotsAreUnique" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PlayerTest.DummyBotPlayerFirstHundredShotsAreUnique
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PlayerTest
+[ RUN      ] PlayerTest.DummyBotPlayerFirstHundredShotsAreUnique
+Создан флот для Bot из 10 кораблей
+[       OK ] PlayerTest.DummyBotPlayerFirstHundredShotsAreUnique (0 ms)
+[----------] 1 test from PlayerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PlayerTest.DummyBotPlayerFirstHundredShotsAreUnique" end time: Mar 13 00:00 MSK
+"PlayerTest.DummyBotPlayerFirstHundredShotsAreUnique" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/43 Testing: PlayerTest.PlaceFleetMakesShipsPlacedForBot
+39/43 Test: PlayerTest.PlaceFleetMakesShipsPlacedForBot
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=PlayerTest.PlaceFleetMakesShipsPlacedForBot" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"PlayerTest.PlaceFleetMakesShipsPlacedForBot" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PlayerTest.PlaceFleetMakesShipsPlacedForBot
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PlayerTest
+[ RUN      ] PlayerTest.PlaceFleetMakesShipsPlacedForBot
+Создан флот для Bot из 10 кораблей
+Флот для Bot расставлен случайно
+[       OK ] PlayerTest.PlaceFleetMakesShipsPlacedForBot (0 ms)
+[----------] 1 test from PlayerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PlayerTest.PlaceFleetMakesShipsPlacedForBot" end time: Mar 13 00:00 MSK
+"PlayerTest.PlaceFleetMakesShipsPlacedForBot" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/43 Testing: GameTest.HasNoWinnerRightAfterCreation
+40/43 Test: GameTest.HasNoWinnerRightAfterCreation
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=GameTest.HasNoWinnerRightAfterCreation" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"GameTest.HasNoWinnerRightAfterCreation" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GameTest.HasNoWinnerRightAfterCreation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GameTest
+[ RUN      ] GameTest.HasNoWinnerRightAfterCreation
+Создан флот для Alice из 10 кораблей
+Создан флот для Bot из 10 кораблей
+[       OK ] GameTest.HasNoWinnerRightAfterCreation (0 ms)
+[----------] 1 test from GameTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GameTest.HasNoWinnerRightAfterCreation" end time: Mar 13 00:00 MSK
+"GameTest.HasNoWinnerRightAfterCreation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/43 Testing: GameTest.CreatePlayerReturnsHumanPlayerForTypeOne
+41/43 Test: GameTest.CreatePlayerReturnsHumanPlayerForTypeOne
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=GameTest.CreatePlayerReturnsHumanPlayerForTypeOne" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"GameTest.CreatePlayerReturnsHumanPlayerForTypeOne" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GameTest.CreatePlayerReturnsHumanPlayerForTypeOne
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GameTest
+[ RUN      ] GameTest.CreatePlayerReturnsHumanPlayerForTypeOne
+Создан флот для Alice из 10 кораблей
+[       OK ] GameTest.CreatePlayerReturnsHumanPlayerForTypeOne (0 ms)
+[----------] 1 test from GameTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GameTest.CreatePlayerReturnsHumanPlayerForTypeOne" end time: Mar 13 00:00 MSK
+"GameTest.CreatePlayerReturnsHumanPlayerForTypeOne" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/43 Testing: GameTest.CreatePlayerReturnsBotPlayerForTypeTwo
+42/43 Test: GameTest.CreatePlayerReturnsBotPlayerForTypeTwo
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=GameTest.CreatePlayerReturnsBotPlayerForTypeTwo" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"GameTest.CreatePlayerReturnsBotPlayerForTypeTwo" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GameTest.CreatePlayerReturnsBotPlayerForTypeTwo
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GameTest
+[ RUN      ] GameTest.CreatePlayerReturnsBotPlayerForTypeTwo
+Создан флот для Bot из 10 кораблей
+[       OK ] GameTest.CreatePlayerReturnsBotPlayerForTypeTwo (0 ms)
+[----------] 1 test from GameTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GameTest.CreatePlayerReturnsBotPlayerForTypeTwo" end time: Mar 13 00:00 MSK
+"GameTest.CreatePlayerReturnsBotPlayerForTypeTwo" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/43 Testing: GameTest.SetupPlacesFleetForBothPlayers
+43/43 Test: GameTest.SetupPlacesFleetForBothPlayers
+Command: "/home/yaga/sea_battle_game/build/sea_battle_tests" "--gtest_filter=GameTest.SetupPlacesFleetForBothPlayers" "--gtest_also_run_disabled_tests"
+Directory: /home/yaga/sea_battle_game/build
+"GameTest.SetupPlacesFleetForBothPlayers" start time: Mar 13 00:00 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/yaga/sea_battle_game/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GameTest.SetupPlacesFleetForBothPlayers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GameTest
+[ RUN      ] GameTest.SetupPlacesFleetForBothPlayers
+Создан флот для Alice из 10 кораблей
+Создан флот для Bot из 10 кораблей
+Флот для Alice расставлен случайно
+Флот для Bot расставлен случайно
+[       OK ] GameTest.SetupPlacesFleetForBothPlayers (0 ms)
+[----------] 1 test from GameTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GameTest.SetupPlacesFleetForBothPlayers" end time: Mar 13 00:00 MSK
+"GameTest.SetupPlacesFleetForBothPlayers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 13 00:00 MSK
