@@ -1,0 +1,17 @@
+# ninja log v7
+1	1518	1773348814786949400	CMakeFiles/sea_battle_tests.dir/tests/test_main.cpp.o	e9b5b770af7e74e5
+1	1607	1773348814786635372	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	3bcc92b769a2d225
+1	1907	1773348814787102495	CMakeFiles/sea_battle_tests.dir/tests/test_ships.cpp.o	72d80bf06242a287
+2	1942	1773348814787636752	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o	6725908493e4c617
+1	2375	1773348814787209104	CMakeFiles/sea_battle_tests.dir/tests/test_fleet.cpp.o	5bb308f9e03d97c1
+1	2521	1773348814786812277	CMakeFiles/sea_battle_game.dir/main.cpp.o	ad3e7218bd891205
+2521	2580	1773348817302661107	sea_battle_game	701b1133460630d9
+1	2618	1773348814786474336	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o	3b6b28f4788f3c54
+2	2631	1773348814787425068	CMakeFiles/sea_battle_tests.dir/tests/test_player.cpp.o	2a3220835200d690
+2	2771	1773348814787316457	CMakeFiles/sea_battle_tests.dir/tests/test_board.cpp.o	83e8f28bab30c9a1
+2	2822	1773348814787526127	CMakeFiles/sea_battle_tests.dir/tests/test_game.cpp.o	f325c7d1b1c362bf
+1	4036	1773348814782659952	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	49e52b800bdc1e6f
+4036	4196	1773348818814661779	lib/libgtest.a	164ca0d25561846e
+4196	4237	1773348818982178160	lib/libgtest_main.a	920c1c79617cdacb
+4196	4247	1773348818979213230	lib/libgmock.a	8d8caa28388a9743
+4247	4287	1773348819030517099	lib/libgmock_main.a	20fb8166cacb3791
