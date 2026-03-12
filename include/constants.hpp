@@ -1,6 +1,8 @@
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 
+#include <iostream>
+
 const int BOARD_SIZE = 10;
 //sings
 const char EMPTY = '.';

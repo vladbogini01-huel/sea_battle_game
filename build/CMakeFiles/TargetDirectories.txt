@@ -1,0 +1,3 @@
+/home/yaga/sea_battle_game/build/CMakeFiles/sea_battle_game.dir
+/home/yaga/sea_battle_game/build/CMakeFiles/edit_cache.dir
+/home/yaga/sea_battle_game/build/CMakeFiles/rebuild_cache.dir

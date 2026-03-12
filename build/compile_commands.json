@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/yaga/sea_battle_game/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++20 -o CMakeFiles/sea_battle_game.dir/main.cpp.o -c /home/yaga/sea_battle_game/main.cpp",
+  "file": "/home/yaga/sea_battle_game/main.cpp",
+  "output": "CMakeFiles/sea_battle_game.dir/main.cpp.o"
+}
+]
