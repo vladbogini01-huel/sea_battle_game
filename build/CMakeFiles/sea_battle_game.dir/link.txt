@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/sea_battle_game.dir/link.d CMakeFiles/sea_battle_game.dir/main.cpp.o -o sea_battle_game
