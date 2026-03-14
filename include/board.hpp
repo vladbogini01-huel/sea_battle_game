@@ -77,7 +77,7 @@ private:
         if (hit) {
             myGrid[row][col] = HIT;
 
-            //Если корабль потопили — пометим все клетки корабля как @
+            //Если корабль потопили - пометим все клетки корабля как @
             if (destroyed) {
                 Ship* s = fleet.findShipAt(row, col);
                 if (s) {

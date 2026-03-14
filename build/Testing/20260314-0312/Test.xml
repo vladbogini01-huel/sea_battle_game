@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20260314-0312-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.31.6"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="Yaga"
+	OSRelease="6.17.10+kali-amd64"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Kali 6.17.10-1kali1 (2025-12-08)"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="167"
+	ModelName="11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz"
+	ProcessorCacheSize="12288"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="25182"
+	TotalPhysicalMemory="31965"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="4200"
+	>
+	<Testing>
+		<StartDateTime>Mar 14 06:12 MSK</StartDateTime>
+		<StartTestTime>1773457977</StartTestTime>
+		<TestList/>
+		<EndDateTime>Mar 14 06:12 MSK</EndDateTime>
+		<EndTestTime>1773457977</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
